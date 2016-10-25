@@ -1,0 +1,14 @@
+zuul:
+    prefix : /api
+    routes:
+        flights:
+          path: /flights/**
+          serviceId: FLIGHT-SERVICE
+          stripPrefix: false
+
+ribbon:
+  eureka:
+    enabled: true
+
+server:
+  port: 8080
