@@ -30,7 +30,7 @@ public class FlightRestContoller {
     @RequestMapping(method = RequestMethod.GET)
     public Collection<Flight> getFlights() {
 
-       // Collection<Flight> flights = restTemplate.getForObject("http://FLIGHT-SERVICE/flights",Collection.class);
+      //  Collection<Flight> flights = restTemplate.getForObject("http://FLIGHT-SERVICE/flights",Collection.class);
         Collection<Flight> flights = flightServiceRepo.getFlights();
 
         Flight flight = new Flight("BA011","LHR","SYD");
